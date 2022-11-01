@@ -1,0 +1,185 @@
+{
+  "projectList": [
+    {
+      "projectTypeId": "2",
+      "projectType": {
+        "id": "2",
+        "code": "Pers",
+        "name": "Personal"
+      },
+      "code": 5,
+      "title": "Project 2",
+      "startDate": "2022-10-20T21:00:00.000Z",
+      "endDate": "2022-10-27T21:00:00.000Z",
+      "statusId": "2",
+      "statusType": {
+        "id": "2",
+        "code": "PRGRS",
+        "name": "In Progress"
+      },
+      "id": "2"
+    },
+    {
+      "projectTypeId": "2",
+      "projectType": {
+        "id": "2",
+        "code": "Pers",
+        "name": "Personal"
+      },
+      "code": 6,
+      "title": "Project 3",
+      "startDate": "2022-10-01T21:00:00.000Z",
+      "endDate": "2022-10-18T21:00:00.000Z",
+      "statusId": "2",
+      "statusType": {
+        "id": "2",
+        "code": "PRGRS",
+        "name": "In Progress"
+      },
+      "id": "PcVxdKC"
+    }
+  ],
+  "taskList": [
+    {
+      "taskCategoryId": "1",
+      "taskCategory": {
+        "id": "2",
+        "code": "MLTDEV",
+        "name": "Multiple Developers"
+      },
+      "projectId": "2",
+      "project": {
+        "title": "Project 2",
+        "id": "2"
+      },
+      "title": "Task 2",
+      "startDate": "2022-10-27T21:00:00.000Z",
+      "duration": 15,
+      "statusId": "3",
+      "status": {
+        "id": "3",
+        "code": "CMPL",
+        "name": "Completed"
+      },
+      "id": "2"
+    },
+    {
+      "taskCategoryId": "1",
+      "taskCategory": {
+        "id": "1",
+        "code": "SNGDEV",
+        "name": "Single Developer"
+      },
+      "projectId": "2",
+      "project": {
+        "title": "Project 2",
+        "id": "2"
+      },
+      "title": "Task 3",
+      "startDate": "2022-10-02T21:00:00.000Z",
+      "duration": 6,
+      "statusId": "2",
+      "status": {
+        "id": "2",
+        "code": "PRGRS",
+        "name": "In Progress"
+      },
+      "id": "3"
+    },
+    {
+      "taskCategoryId": "1",
+      "taskCategory": {
+        "id": "1",
+        "code": "SNGDEV",
+        "name": "Single Developer"
+      },
+      "projectId": "1",
+      "project": {
+        "title": "Project 1",
+        "id": "1"
+      },
+      "title": "Task 4",
+      "startDate": "2022-10-07T21:00:00.000Z",
+      "duration": 13,
+      "statusId": "3",
+      "status": {
+        "id": "3",
+        "code": "CMPL",
+        "name": "Completed"
+      },
+      "id": "4"
+    }
+  ],
+  "userList": [
+    {
+      "fullName": "Name 1",
+      "userName": "User Name 1",
+      "email": "Email 1",
+      "id": "1"
+    },
+    {
+      "fullName": "Name 2",
+      "userName": "User Name 2",
+      "email": "Email 2",
+      "id": "fs6h_yg"
+    }
+  ],
+  "taskAssignment": [
+    {
+      "taskId": "2",
+      "userId": "1",
+      "id": 1
+    }
+  ],
+  "projectType": [
+    {
+      "id": "1",
+      "code": "Prof",
+      "name": "Professional"
+    },
+    {
+      "id": "2",
+      "code": "Pers",
+      "name": "Personal"
+    }
+  ],
+  "statusType": [
+    {
+      "id": "1",
+      "code": "STRT",
+      "name": "Started"
+    },
+    {
+      "id": "2",
+      "code": "PRGRS",
+      "name": "In Progress"
+    },
+    {
+      "id": "3",
+      "code": "CMPL",
+      "name": "Completed"
+    }
+  ],
+  "taskType": [
+    {
+      "id": "1",
+      "code": "SNGDEV",
+      "name": "Single Developer"
+    },
+    {
+      "id": "2",
+      "code": "MLTDEV",
+      "name": "Multiple Developers"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

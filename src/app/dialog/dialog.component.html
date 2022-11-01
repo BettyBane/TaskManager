@@ -1,0 +1,110 @@
+<h1 mat-dialog-title>Add Project Form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="projectForm">
+    <mat-form-field appearance="outline">
+      <mat-label>project Type Id</mat-label>
+      <mat-select formControlName="projectTypeId" placeholder="projectTypeId">
+        <mat-option *ngFor="let item of projectType" [value]="item.id">{{
+          item.name
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>statusId</mat-label>
+      <mat-select formControlName="statusId" placeholder="statusId">
+        <mat-option *ngFor="let item of statusType" [value]="item.id">{{
+          item.name
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- <mat-form-field appearance="outline">
+      <mat-label>startDate</mat-label>
+      <input formControlName="startDate" matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>endDate</mat-label>
+      <input formControlName="endDate" matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field> -->
+
+    <mat-form-field appearance="outline">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input
+          matStartDate
+          formControlName="startDate"
+          placeholder="Start date"
+        />
+        <input matEndDate formControlName="endDate" placeholder="End date" />
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+      <!--     
+      <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+      <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error> -->
+    </mat-form-field>
+
+    <!-- 
+    <mat-form-field appearance="outline">
+      <mat-label>statusId</mat-label>
+      <input
+        formControlName="statusId"
+        matInput
+        type="number"
+        placeholder="statusId"
+      />
+    </mat-form-field> -->
+    <!-- <label for="" id="newness-radio-group-label"
+      ><h2>Product Newness</h2></label
+    >
+    <mat-radio-group
+      formControlName="newness"
+      class="newness-radio-group"
+      aria-labelledby="newness-radio-group-label"
+    >
+      <mat-radio-button
+        class="newness-radio-button"
+        *ngFor="let item of newnessList"
+        [value]="item"
+      >
+        {{ item }}
+      </mat-radio-button>
+    </mat-radio-group> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Code</mat-label>
+      <input formControlName="code" matInput type="number" placeholder="code" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>title</mat-label>
+      <input formControlName="title" matInput placeholder="title" />
+    </mat-form-field>
+
+    <!-- <mat-form-field appearance="outline">
+      <mat-label>Comment</mat-label>
+      <textarea
+        formControlName="comment"
+        matInput
+        name="Comment"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </mat-form-field> -->
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close="">Cancel</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="addProduct()"
+  >
+    {{ actionBtn }}
+  </button>
+</div>
